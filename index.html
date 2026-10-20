@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bigzone Marketing | Karachi Property</title>
+  <meta name="description" content="Bigzone Marketing helps you buy, sell and rent houses, apartments, plots and commercial property across Karachi.">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <span class="eyebrow" id="heroEyebrow">Trusted by 11K+ followers</span>
+      <h1><span data-setting="hero_title">Karachi Property</span><br><span class="hl" data-setting="hero_highlight">Buy, Sell &amp; Rent</span></h1>
+      <p class="hero-sub" data-setting="hero_subtitle">Houses, apartments, plots and commercial spaces across Karachi.</p>
+
+      <form class="search-box" id="searchForm" action="properties.html">
+        <div class="search-tabs" role="tablist">
+          <button type="button" class="tab active" data-purpose="Buy">Buy</button>
+          <button type="button" class="tab" data-purpose="Rent">Rent</button>
+          <button type="button" class="tab" data-purpose="Projects">Projects</button>
+        </div>
+        <input type="hidden" name="purpose" id="sPurpose" value="Buy">
+        <div class="search-fields">
+          <label>
+            <span>Area</span>
+            <select name="area" class="area-select"><option value="">All Karachi Areas</option></select>
+          </label>
+          <label>
+            <span>Property Type</span>
+            <select name="type">
+              <option value="">All Types</option>
+              <option>House</option><option>Apartment</option><option>Plot</option>
+              <option>Commercial</option><option>Farmhouse</option>
+            </select>
+          </label>
+          <label>
+            <span>Max Budget</span>
+            <select name="budget">
+              <option value="">Any Budget</option>
+              <option value="10000000">Up to 1 Crore</option>
+              <option value="30000000">Up to 3 Crore</option>
+              <option value="60000000">Up to 6 Crore</option>
+              <option value="100000000">Up to 10 Crore</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary btn-search">🔍 Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat"><strong data-count-key="stat_followers">0</strong><span>Facebook Followers</span></div>
+      <div class="stat"><strong data-count-key="stat_listed">0</strong><span>Properties Listed</span></div>
+      <div class="stat"><strong data-count-key="stat_clients">0</strong><span>Happy Clients</span></div>
+      <div class="stat"><strong data-count-key="stat_cities">0</strong><span>Karachi Areas</span></div>
+    </div>
+  </section>
+
+  <!-- Properties -->
+  <section class="section" id="properties">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Featured Listings</span>
+        <h2>Explore Our Latest Properties</h2>
+        <p>Hand-picked homes, plots and commercial units across Karachi.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="">All</button>
+        <button class="chip" data-filter="House">Houses</button>
+        <button class="chip" data-filter="Apartment">Apartments</button>
+        <button class="chip" data-filter="Plot">Plots</button>
+        <button class="chip" data-filter="Commercial">Commercial</button>
+        <button class="chip" data-filter="Farmhouse">Farmhouses</button>
+      </div>
+      <div class="grid property-grid" id="propertyGrid"><div class="empty">Loading properties…</div></div>
+      <div class="center-btn"><a href="properties.html" class="btn btn-outline">View All Properties</a></div>
+    </div>
+  </section>
+
+  <!-- Cities -->
+  <section class="section section-alt" id="cities">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Locations</span>
+        <h2>Browse Karachi Areas</h2>
+      </div>
+      <div class="grid city-grid" id="cityGrid"></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What We Do</span>
+        <h2>Complete Real Estate Services</h2>
+        <p>From the first site visit to the final transfer, we handle it all.</p>
+      </div>
+      <div class="grid service-grid">
+        <div class="service"><div class="icon">🏠</div><h3>Buy &amp; Sell</h3><p>Find the right home or get the best price for yours with our verified buyer and seller network.</p></div>
+        <div class="service"><div class="icon">🔑</div><h3>Rentals</h3><p>Houses, flats and offices for rent with tenant screening and agreement support.</p></div>
+        <div class="service"><div class="icon">📈</div><h3>Investment Advice</h3><p>Plot files, installment projects and high-growth areas explained in plain terms.</p></div>
+        <div class="service"><div class="icon">📄</div><h3>Documentation</h3><p>Transfer, NOC, registry and verification handled by our experienced team.</p></div>
+        <div class="service"><div class="icon">✈️</div><h3>Overseas Pakistanis</h3><p>Buy and manage property back home with video tours and remote paperwork.</p></div>
+        <div class="service"><div class="icon">📣</div><h3>Property Marketing</h3><p>Reach thousands of active buyers through our social media and digital campaigns.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-head light">
+        <span class="eyebrow">Projects</span>
+        <h2>Featured Housing &amp; Commercial Projects</h2>
+        <p>Book on easy installment plans with official dealership support.</p>
+      </div>
+      <div class="grid project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about-media">
+        <img id="ownerPhoto" src="images/about.svg" alt="Bigzone owner">
+        <div class="about-badge"><img src="images/logo-round.png" alt=""><div><strong>Bigzone</strong><span>Marketing™</span></div></div>
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">About Us</span>
+        <h2>Your Trusted Karachi Property Partner</h2>
+        <p data-setting="about_text"></p>
+        <ul class="checklist">
+          <li>Verified listings and transparent pricing</li>
+          <li>Dealers for leading housing societies</li>
+          <li>Free consultation and site visits</li>
+          <li>Complete legal and transfer support</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Talk to an Advisor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="section section-alt" id="news">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">News &amp; Updates</span>
+        <h2>Latest From Bigzone</h2>
+      </div>
+      <div class="grid post-grid" id="postGrid"></div>
+      <div class="center-btn"><a href="blog.html" class="btn btn-outline">All Updates</a></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="grid testimonial-grid">
+        <blockquote class="testimonial"><p>“They found us a 10 marla house in our budget within two weeks and handled the full transfer. Very professional team.”</p><cite><strong>Ahmed R.</strong> Karachi</cite></blockquote>
+        <blockquote class="testimonial"><p>“As an overseas Pakistani I was worried about buying remotely. Bigzone did video visits and kept me updated at every step.”</p><cite><strong>Sana K.</strong> Dubai</cite></blockquote>
+        <blockquote class="testimonial"><p>“Sold my plot at a great price. Their social media reach brought serious buyers very quickly.”</p><cite><strong>Imran S.</strong> Karachi</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <div>
+        <h2>Want to sell or rent out your property?</h2>
+        <p>List it with Bigzone Marketing and reach thousands of active buyers.</p>
+      </div>
+      <a href="#contact" class="btn btn-white">List Your Property</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact">
+      <div class="contact-info">
+        <span class="eyebrow">Contact Us</span>
+        <h2>Let's Find Your Next Property</h2>
+        <p>Send us your requirement and our advisor will call you back.</p>
+        <div class="info-item"><span>📍</span><div><strong>Office</strong><p data-setting="address"></p></div></div>
+        <div class="info-item"><span>📞</span><div><strong>Phone / WhatsApp</strong><p><a id="cPhone" data-setting="phone"></a></p></div></div>
+        <div class="info-item"><span>✉️</span><div><strong>Email</strong><p><a id="cEmail" data-setting="email"></a></p></div></div>
+        <div class="info-item"><span>🕘</span><div><strong>Office Hours</strong><p data-setting="hours"></p></div></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="row">
+          <label>Full Name<input type="text" name="name" required placeholder="Your name"></label>
+          <label>Phone<input type="tel" name="phone" required placeholder="03XX XXXXXXX"></label>
+        </div>
+        <div class="row">
+          <label>I want to
+            <select name="purpose"><option>Buy</option><option>Sell</option><option>Rent</option><option>Invest</option></select>
+          </label>
+          <label>City
+            <select name="city"><option>Karachi</option></select>
+          </label>
+        </div>
+        <label>Message<textarea name="message" rows="4" placeholder="Tell us about the property you need"></textarea></label>
+        <button type="submit" class="btn btn-primary btn-block">Send on WhatsApp</button>
+        <p class="form-note">Your enquiry opens in WhatsApp so you can reach us instantly.</p>
+      </form>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/vendor/supabase.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

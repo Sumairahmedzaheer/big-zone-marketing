@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Properties | Bigzone Marketing</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Properties</h1>
+      <p>Houses, apartments, plots and commercial property for sale and rent across Karachi.</p>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <form class="filter-bar" id="filterForm">
+        <label><span>Search</span><input type="search" name="q" placeholder="Area, society or keyword"></label>
+        <label><span>Purpose</span>
+          <select name="purpose"><option value="">Buy or Rent</option><option value="Buy">Buy</option><option value="Rent">Rent</option></select>
+        </label>
+        <label><span>Area</span><select name="area" id="fArea"><option value="">All Karachi Areas</option></select></label>
+        <label><span>Type</span>
+          <select name="type"><option value="">All Types</option><option>House</option><option>Apartment</option><option>Plot</option><option>Commercial</option><option>Farmhouse</option></select>
+        </label>
+        <label><span>Max Budget</span>
+          <select name="budget">
+            <option value="">Any Budget</option>
+            <option value="10000000">Up to 1 Crore</option><option value="30000000">Up to 3 Crore</option>
+            <option value="60000000">Up to 6 Crore</option><option value="100000000">Up to 10 Crore</option>
+          </select>
+        </label>
+        <label><span>Sort</span>
+          <select name="sort"><option value="">Newest</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select>
+        </label>
+      </form>
+      <p class="results-note" id="resultsNote"></p>
+      <div class="grid property-grid" id="propertyGrid"><div class="empty">Loading properties…</div></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/vendor/supabase.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/properties.js"></script>
+</body>
+</html>

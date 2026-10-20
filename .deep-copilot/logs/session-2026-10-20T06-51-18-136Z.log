@@ -1,0 +1,6 @@
+[2026-10-20T06:51:18.136Z] [INIT] Deep Copilot debug log started. file=c:\Users\IT\Documents\Big Zone Marketing\.deep-copilot\logs\session-2026-10-20T06-51-18-136Z.log
+[2026-10-20T06:51:18.136Z] [ACTIVATE] {"version":"0.43.1"}
+[2026-10-20T06:51:18.138Z] [PROVIDERS_LOADED] {"count":4,"ids":["anthropic","custom","deepseek","openai"]}
+[2026-10-20T06:51:18.139Z] [TERMINAL_MONITOR_STARTED] {}
+[2026-10-20T06:51:18.139Z] [STATUSBAR_REGISTERED] {"id":"deepseekAgent.statusBar"}
+[2026-10-20T06:51:18.147Z] [INLINE_COMPLETION_REGISTERED]
